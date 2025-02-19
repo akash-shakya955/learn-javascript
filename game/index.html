@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
-    <title>tic tac toe game</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="learn.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tic tac toe game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
-
 <body>
-    <div class="container">
-        <div class="box1">
-            <div class="items-one" style="background-color: #FFD95F;">0</div>
-            <div class="items-one" style="background-color: #FFEFC8;" >1</div>
-            <div class="items-one" style="background-color: #B8D576;">2</div>
-        </div>
-
-        <div class="box2">
-            <div class="items-two" style="background-color: #578FCA;">4</div>
-            <div class="items-two" style="background-color: #497D74;">5</div>
-            <div class="items-two" style="background-color: #71BBB2;">6</div>
-        </div>
-
-
-        <div class="box3">
-            <div class="items-three" style="background-color: #E52020;">7</div>
-            <div class="items-three" style="background-color: #FFCDB2;">8</div>
-            <div class="items-three" style="background-color: #FBA518;">9</div>
-        </div>
-
-        <div class="box4">
-            <input type="number" placeholder="Enter Box Number" name="number" id="number" />
-        </div>
-
-        <div class="box5">
-            <button type="button" onclick="colorx()">X</button>
-            <button type="button" onclick="color0()">0</button>
-        </div>
-
-
+  
+  <div class="boxes">
+    <div class="box">
+      <span>0</span>
+      <div class="draw"></div>
     </div>
-</body>
 
+    <div class="box">
+      <span>1</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>2</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>3</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>4</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>5</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>6</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>7</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="box">
+      <span>8</span>
+      <div class="draw"></div>
+    </div>
+
+    <div class="controls">
+      <input type="number" name="number" id="number" placeholder="Enter Box Number">
+      <div class="button-group">
+          <button type="submit" onclick="clickx()" disabled: ="true">X</button>
+          <button type="submit" onclick="click0()" disabled: ="true">0</button>
+      </div>
+  </div>
+  
+  </div>
+</body>
 </html>

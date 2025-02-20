@@ -16,8 +16,8 @@ function click0() {
 
     document.getElementsByClassName("box")[index].getElementsByClassName("draw")[0].innerText = "0";
 
-    document.getElementById("btn1").enabled = true;
-    document.getElementById("btn2").disabled = false;
+    document.getElementById("btn1").enabled = false;
+    document.getElementById("btn2").disabled = truer;
 
 }
 

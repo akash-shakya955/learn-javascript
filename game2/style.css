@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    background-image: url(game-bg.jpeg);
+    background-size: cover;
+   
+
+  }
+  
+  /* Tic-Tac-Toe Grid */
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Individual Box */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    border: 2px solid #333;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Box के अंदर नंबर (0-8) को Top-Left में Adjust करना */
+  .box span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    pointer-events: none;
+  }
+  
+  /* X और O को सही से Center में दिखाना */
+  .draw {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Input और Buttons को सही से Align करना */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;  /* पहले 320px था, अब Grid से Match किया */
+    margin-top: 10px;
+  }
+  
+  /* Input Field */
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Buttons को सही Alignment और Spacing देना */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;  /* दोनों बटन के बीच Gap */
+  }
+  
+  button {
+    width: 50%;  /* दोनों बटन बराबर हों और Grid से बाहर न जाएं */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: darkblue;
+  }
+  

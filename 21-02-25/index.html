@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ADD</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" name="" id="btna">
+    <input type="text" name="" id="btnb">
+    <button type="submit" id="btnadd">Add</button>
+    <button type="submit" id="showR">Show Result</button>
+  </div>
+
+  <script>
+    let result = 0;
+    const inputA = document.querySelector("#btna");
+
+    const inputB = document.querySelector("#btnb");
+
+    const btnAdd = document.querySelector("#btnadd");
+
+    const showR = document.querySelector("#showR");
+    
+
+    function Addition(){
+      const valA = inputA.value;
+      const valB = inputB.value;
+      result = valA + valB;
+      showR.disabled = false;
+    
+    }
+
+    function showResult(){
+      alert(result);
+      showR.disabled = true;
+      result = "";
+    }
+
+    
+    btnAdd.addEventListener("click", Addition);
+
+    showR.addEventListener("click", showResult)
+
+    showR.disabled = true;
+
+  
+  </script>
+</body>
+</html>
+</body>
+</html>

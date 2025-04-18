@@ -1,6 +1,7 @@
 
 
-function printStar() {
+
+export function printStar() {
     let num = document.getElementById("number").value;
     let resultBox = document.getElementById("resultbox");
     
@@ -17,7 +18,7 @@ function printStar() {
     resultBox.innerText = pattern;
 }
 
-function clearPattern() {
+export function clearPattern() {
     document.getElementById("number").value = "";
     document.getElementById("resultbox").innerHTML = "";
 }
